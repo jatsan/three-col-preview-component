@@ -1,1 +1,90 @@
-@use "../util" as *;
+@use '../util' as *;
+
+.card {
+  &--sedans {
+    background-color: var(--bright-orange);
+    border-top-left-radius: rem(10);
+    border-top-right-radius: rem(10);
+
+    & a {
+      color: var(--bright-orange);
+    }
+
+    @include breakpoint-min('large') {
+      border-bottom-left-radius: rem(10);
+      border-top-left-radius: rem(10);
+      border-top-right-radius: 0;
+    }
+  }
+
+  &--suvs {
+    background-color: var(--dark-cyan);
+
+    & a {
+      color: var(--dark-cyan);
+    }
+  }
+
+  &--luxury {
+    background-color: var(--very-dark-cyan);
+    border-bottom-left-radius: rem(10);
+    border-bottom-right-radius: rem(10);
+
+    & a {
+      color: var(--very-dark-cyan);
+    }
+
+    @include breakpoint-min('large') {
+      border-bottom-right-radius: rem(10);
+      border-top-right-radius: rem(10);
+      border-bottom-left-radius: 0;
+    }
+  }
+
+  &__icon {
+    margin: rem(48) auto rem(35) rem(48);
+  }
+
+  &__title {
+    margin-left: rem(48);
+    font-size: rem(35);
+    font-family: var(--font-big-shoulders-display);
+    font-weight: 700;
+  }
+
+  &__text {
+    margin-left: rem(48);
+    margin-bottom: rem(32);
+    padding-right: rem(50);
+    font-weight: 400;
+
+    @include breakpoint-min('large') {
+      padding-right: rem(17);
+      margin-bottom: rem(80);
+    }
+  }
+
+  & a {
+    padding: rem(20) rem(30) rem(20) rem(30);
+  }
+
+  &__cta {
+    width: rem(149);
+    height: rem(48);
+    background-color: var(--very-light-gray);
+    border-radius: rem(75);
+    margin: 0 auto rem(50) rem(48);
+    cursor: pointer;
+
+    &:hover,
+    &:focus-visible {
+      background-color: transparent;
+      border: rem(2) solid var(--transparent-white);
+      color: var(--transparent-white);
+
+      & a {
+        color: var(--transparent-white);
+      }
+    }
+  }
+}

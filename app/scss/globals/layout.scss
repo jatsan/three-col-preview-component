@@ -1,5 +1,27 @@
+@use '../util' as *;
+
 body {
+  max-height: 100vh;
   font-family: var(--font-lexend-deca);
-  // color: var(--transparent-white);
   background-color: var(--very-light-gray);
+  font-size: rem(15);
+  color: var(--transparent-white);
+}
+
+.container {
+  margin: rem(90) auto;
+  max-width: rem(328);
+  flex-direction: column;
+
+  @include breakpoint-min('large') {
+    margin-top: rem(152);
+    max-width: rem(818);
+    flex-direction: row;
+  }
+}
+
+.flex-ja {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
