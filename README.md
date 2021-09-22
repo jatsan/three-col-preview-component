@@ -26,12 +26,12 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshot.jpg)
+![Desktop](./screenshot.png)
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [Source Code](https://github.com/jatsan/three-col-preview-component)
+- Live Site URL: [Live Site](https://jatsan.github.io/three-col-preview-component/)
 
 ## My process
 
@@ -40,7 +40,7 @@ Users should be able to:
 - Semantic HTML5 markup
 - CSS custom properties
 - Flexbox
-- [BEM](http://getbem.com/) Naming Convention
+- [BEM](http://getbem.com/) - Naming Convention
 - Mobile-first workflow
 - [SCSS](https://sass-lang.com/) - CSS Preprocessor
 - [Gulp](https://gulpjs.com/) - Workflow Automation Tool
